@@ -188,6 +188,11 @@ header a:hover {
 }
 
 @media (min-width: 1000px){
+    
+    html {
+    scroll-behavior: smooth;
+    }
+    
     header{
         position: fixed;
         width: 100%;
@@ -267,6 +272,10 @@ header a:hover {
 }
 
 @media (min-width: 1200px){
+    
+    html {
+    scroll-behavior: smooth;
+    }
     
     #habilidades .cont{
         display: flex;

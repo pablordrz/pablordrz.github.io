@@ -187,7 +187,7 @@ header a:hover {
     padding: 150px 12px;
 }
 
-@media (min-width: 850px){
+@media (min-width: 1000px){
     header{
         position: fixed;
         width: 100%;

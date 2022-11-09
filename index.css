@@ -56,6 +56,13 @@ header .logo {
 
 }
 
+#home {
+    color:#5F06CC;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+
+}
+
 header .cont{
     display:flex;
     align-items: center;
@@ -128,7 +135,7 @@ header a:hover {
 }
 
 #proyectos {
-    background-color: rgb(32, 45, 80);
+    background-color: rgb(59,69,188);
     color: white;
     text-align: center;
 }
@@ -169,7 +176,7 @@ header a:hover {
 }
 
 #allproyects{
-    background-color: rgb(32, 45, 80);
+    background-color: rgb(59,69,188);
     color: white;
     text-align: center;
 }
@@ -190,7 +197,7 @@ header a:hover {
 @media (min-width: 1000px){
     
     html {
-    scroll-behavior: smooth;
+        scroll-behavior: smooth;
     }
     
     header{
@@ -263,6 +270,14 @@ header a:hover {
         margin-bottom: 30px;
     }
 
+    #proyectos .carta{
+        background-position: center center;
+        background-size: cover;
+        padding: 50px 0px;
+        margin: 30px;
+        border-radius: 15px;
+    }
+
     #habilidades .container{
         display: flex;
         flex-direction: row;
@@ -274,7 +289,7 @@ header a:hover {
 @media (min-width: 1200px){
     
     html {
-    scroll-behavior: smooth;
+        scroll-behavior: smooth;
     }
     
     #habilidades .cont{

@@ -30,8 +30,8 @@ function playerPlays() {
 
         if (board[row][column] == '') {
             cell.addEventListener("click", (e) => {
-                document.querySelectorAll('.celda').forEach((cell, i) => {
-                    cell.removeEventListener('click', this);
+                document.querySelectorAll('.celda').forEach((celda, j) => {
+                    celda.removeEventListener('click', this);
                 }                                            
                 board[row][column] = 'O';
                 cell.textContent = board[row][column];

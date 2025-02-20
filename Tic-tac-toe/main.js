@@ -32,7 +32,7 @@ function playerPlays() {
             cell.addEventListener("click", (e) => {
                 document.querySelectorAll('.celda').forEach((celda, j) => {
                     celda.removeEventListener('click', this);
-                }                                            
+                });                                            
                 board[row][column] = 'O';
                 cell.textContent = board[row][column];
                 let won = checkIfWinner();

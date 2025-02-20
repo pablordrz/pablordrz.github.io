@@ -30,6 +30,9 @@ function playerPlays() {
 
         if (board[row][column] == '') {
             cell.addEventListener("click", (e) => {
+                document.querySelectorAll('.celda').forEach((cell, i) => {
+                    cell.removeEventListener('click', this);
+                }                                            
                 board[row][column] = 'O';
                 cell.textContent = board[row][column];
                 let won = checkIfWinner();

@@ -1,0 +1,222 @@
+.curved-section {
+    position: relative;
+    background: transparent;
+    box-sizing:border-box;
+    height: 120px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+
+.curved-svg {
+    position: relative;
+    top: -1px;
+    bottom: -1px;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+}
+
+#hero {
+    text-align: center;
+    background: linear-gradient(135deg, #fefefe, #7c8a99);
+}
+
+#logo {
+    height: 50px;
+
+}
+
+#subtitle{
+    color: #818c99;
+    
+}
+
+.circle { /* Circulo para los numeros */
+    width: 40px;
+    height: 40px;
+    background-color: #98A6A8;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px auto;
+}
+.text { /*Color y tipografia del texto */
+    color: #2c4259;
+    font-family: 'Roboto';
+}
+.fade-in-right { /* Efecto para la aparición del texto*/
+    opacity: 0;
+    transform: translateX(100px); /* Empieza 100px a la derecha */
+    animation: fadeInRight 1s ease-out forwards;
+}
+/* Aplica el efecto escalonado usando nth-child */
+.fade-in-right:nth-child(1) {
+        animation-delay: 0.5s;
+ }
+.fade-in-right:nth-child(2) {
+        animation-delay: 2.0s;
+ }
+.fade-in-right:nth-child(3) {
+        animation-delay: 3.5s;
+}
+
+@keyframes fadeInRight {
+    from {
+    opacity: 0;
+    transform: translateX(100px);
+    }
+    to {
+    opacity: 1;
+    transform: translateX(0);
+    }
+}
+
+.curv {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.curved-section {
+    position: relative;
+    background: transparent;
+    box-sizing:border-box;
+    height: 120px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.curved-section-down {
+    position: relative;
+    background: transparent;
+    box-sizing:border-box;
+    height: 120px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.curved-svg {
+    position: relative;
+    top: -1px;
+    bottom: -1px;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+}
+
+#non-padding {
+    padding: 0;
+    margin: 0;
+    width: 100vw; /* Ocupar todo el ancho de la pantalla */
+    max-width: 100%;
+}
+.letra_pequeña{
+    font-size: 0.9em;
+}
+#card-pading{
+    padding: 0;
+    opacity: 0;
+    transform: scale(0.5);
+    animation: aparecer 0.6s ease-out forwards;
+}
+
+#animado{
+    opacity: 0;
+    transform: scale(0.5);
+    animation: aparecer 0.6s ease-out forwards;
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/*JORGE*/
+
+.color_fondo_pie {
+    background-color: #23394d; /* Gris oscuro */
+}
+.row_titulo_pie {
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+    word-break: break-all; /* Permite que las palabras se dividan en cualquier punto */
+    overflow-wrap: break-word; /* Asegura que las palabras no sobresalgan */
+    white-space: normal; /* Permite que el texto se ajuste en varias líneas */
+    hyphens: auto; /* Agrega guiones cuando sea posible para mejorar la legibilidad */
+}
+.row_cuerpo_pie {
+    color: rgb(29, 143, 133);
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+    word-break: break-all; /* Permite que las palabras se dividan en cualquier punto */
+    overflow-wrap: break-word; /* Asegura que las palabras no sobresalgan */
+    white-space: normal; /* Permite que el texto se ajuste en varias líneas */
+    hyphens: auto; /* Agrega guiones cuando sea posible para mejorar la legibilidad */
+}
+
+.margen_superior_pie {
+    margin-top: 5%;
+}
+.margen_inferior_pie {
+    margin-bottom: 50px;
+}
+.custom_hr_pie_arriba {
+    border: 1.5px solid rgb(18, 35, 58); /* Cambia el color de la línea */
+    width: 100%;
+}
+.custom_hr_pie_abajo {
+    border: 0.5px solid rgb(18, 35, 58); /* Cambia el color de la línea */
+    width: 100%;
+}
+.margen_izquierdo_pie { 
+    margin-left: 5%;
+}
+.margen_derecho_pie {
+    margin-right: 5%;
+}
+#pie a{
+    color: inherit; /* Mantiene el color del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 1.2em; /* Tamaño de la fuente */
+    font-weight: 500; /* Grosor de la fuente */
+}
+.container-fluid.color_fondo_pie {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.cajas_pie {
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 0px;
+    background-color: #24384a;
+    color: white;
+    border-bottom: 1px solid rgb(19, 47, 55);
+    margin-bottom: 15px;
+    margin-top: 40px;
+}

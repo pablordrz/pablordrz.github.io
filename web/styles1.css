@@ -26,6 +26,22 @@
     background: linear-gradient(135deg, #fefefe, #7c8a99);
 }
 
+#tarjeta-hero {
+    max-width: 30rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    #tarjeta-hero {
+        max-width: 15rem;
+        margin-left: 0;
+    margin-right: 0;
+    }
+    
+    
+}
+
 #logo {
     height: 50px;
 

@@ -165,8 +165,8 @@
         </div>
         <!-- Cards -->
         <div class ="row d-flex justify-content-center align-items-start m-0 p-0 gap-3">
-          <div class="col-md-3 d-flex justify-content-end  justify-content-center align-items-center px-0 w-0 ">
-            <div id ="card-pading" class="card border-light mb-5 sombra " >
+          <div class="col-md-3 d-flex justify-content-end  justify-content-center align-items-center px-0 w-0">
+            <div id ="card-pading" class="card border-light mb-md-5 mb-3 sombra" >
                 <div class="card-header bg-primary text-white py-1">Básico</div>
                 <div class="card-body pb-0">
                   <h4 class="card-title">0€ <small class="text-body-secondary">/mes</small></h4>
@@ -181,7 +181,7 @@
           </div>
             
           <div class="col justify-content-center col-md-3 justify-content-center d-flex align-items-center px-0">
-            <div id ="card-pading" class="card border-light mb-5  sombra" >
+            <div id ="card-pading" class="card border-light mb-md-5 mb-3 sombra" >
                 <div class="card-header bg-primary text-white py-1">Profesional</div>
                 <div class="card-body pb-0">
                   <h4 class="card-title">19,99€ <small class="text-body-secondary">/mes</small></h4>
@@ -196,7 +196,7 @@
             </div>
           </div>
           <div class="col-md-3 d-flex justify-content-start  justify-content-center align-items-center px-0">
-            <div id ="card-pading" class="card border-light mb-5 sombra">
+            <div id ="card-pading" class="card border-light mb-md-5 mb-3 sombra">
                 <div class="card-header bg-primary text-white py-1">Empresarial</div>
                 <div class="card-body pb-0">
                   <h4 class="card-title">49,99€ <small class="text-body-secondary">/mes</small></h4>
@@ -212,7 +212,7 @@
             </div>
           </div>
         </div>
-    </section>
+    </section>
     <div id="pie">
         <div class="container-fluid color_fondo_pie">
             
@@ -316,6 +316,23 @@
             // Evento para cerrar la alerta
             document.querySelector(".cerrar-alerta").addEventListener("click", function () {
                 alerta.remove();
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            // Seleccionar todos los elementos con ID "animado"
+            const elementos = document.querySelectorAll("#card-pading");
+        
+            const observer = new IntersectionObserver((entradas) => {
+                entradas.forEach((entrada) => {
+                    if (entrada.isIntersecting) {
+                        entrada.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.2 }); // Se activa cuando el 20% del elemento es visible
+        
+            // Observar cada elemento con ID "animado"
+            elementos.forEach((elemento) => {
+                observer.observe(elemento);
             });
         });
     </script>

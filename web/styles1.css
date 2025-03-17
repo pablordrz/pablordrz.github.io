@@ -9,6 +9,9 @@
     width: 100%;
 }
 
+.fondo{
+    background: linear-gradient(to bottom right, #fefefe, #768595);
+}
 
 .curved-svg {
     position: relative;

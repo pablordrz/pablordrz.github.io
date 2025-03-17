@@ -34,7 +34,7 @@
 
 @media screen and (min-width: 768px) {
     #tarjeta-hero {
-        max-width: 15rem;
+        max-width: 18rem;
         margin-left: 0;
     margin-right: 0;
     }
@@ -219,7 +219,7 @@
 #pie a{
     color: inherit; /* Mantiene el color del texto */
     text-decoration: none; /* Elimina el subrayado */
-    font-size: 1.2em; /* Tamaño de la fuente */
+    font-size: 1em; /* Tamaño de la fuente */
     font-weight: 500; /* Grosor de la fuente */
 }
 .container-fluid.color_fondo_pie {

@@ -195,8 +195,8 @@
     margin-top: 10px;
     border-radius: 5px;
 
-    word-break: break-all; /* Permite que las palabras se dividan en cualquier punto */
-    overflow-wrap: break-word; /* Asegura que las palabras no sobresalgan */
+    word-break: break-word; /* Permite que las palabras se dividan en cualquier punto */
+   /* overflow-wrap: break-word;  Asegura que las palabras no sobresalgan */
     white-space: normal; /* Permite que el texto se ajuste en varias líneas */
     hyphens: auto; /* Agrega guiones cuando sea posible para mejorar la legibilidad */
 }

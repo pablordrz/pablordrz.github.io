@@ -115,7 +115,7 @@
                 <img src="chatsvaia.png" alt="Imagen chatbot svaia" width="300px" class="sombra">
             </div>
             <div class="col-12 col-lg-6 ">                 <!-- Columna que contiene los pasos a seguir para el uso de la página -->
-                <div class="row fade-in-right pt-2 d-flex align-items-center gap-3 justify-content-lg-start justify-content-center"> <!-- Fila 1 -->
+                <div id="fade-in-right" class="row pt-2 d-flex align-items-center gap-3 justify-content-lg-start justify-content-center"> <!-- Fila 1 -->
                     <div class="col-12 col-lg-1 pb-lg-5 ">
                         <div class="circle">1</div> 
                     </div>  
@@ -124,7 +124,7 @@
                         <p class="text-primary ">Describe tu proyecto usando nuestro chat</p>
                     </div>  
                 </div>
-                <div class="row fade-in-right d-flex align-items-center gap-3 justify-content-lg-start justify-content-center"> <!-- Fila 2 -->
+                <div id="fade-in-right" class="row fade-in-right d-flex align-items-center gap-3 justify-content-lg-start justify-content-center"> <!-- Fila 2 -->
                     <div class="col-6 col-lg-1 pb-lg-5 ">
                         <div class="circle">2</div>
                     </div>
@@ -133,7 +133,7 @@
                         <p class="text-primary">Nuestra IA buscará vulnerabilidades que puedan ser de tu interés</p>
                     </div>  
                 </div>
-                <div class="row  fade-in-right pt-2 d-flex align-items-center gap-3 justify-content-lg-start justify-content-center"> <!-- Fila 3 -->
+                <div id="fade-in-right" class="row  fade-in-right pt-2 d-flex align-items-center gap-3 justify-content-lg-start justify-content-center"> <!-- Fila 3 -->
                     <div class="col-6 col-lg-1 pb-lg-5">
                         <div class="circle">3</div>
                     </div>
@@ -321,6 +321,23 @@
         document.addEventListener("DOMContentLoaded", function () {
             // Seleccionar todos los elementos con ID "animado"
             const elementos = document.querySelectorAll("#card-pading");
+        
+            const observer = new IntersectionObserver((entradas) => {
+                entradas.forEach((entrada) => {
+                    if (entrada.isIntersecting) {
+                        entrada.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.2 }); // Se activa cuando el 20% del elemento es visible
+        
+            // Observar cada elemento con ID "animado"
+            elementos.forEach((elemento) => {
+                observer.observe(elemento);
+            });
+        });
+         document.addEventListener("DOMContentLoaded", function () {
+            // Seleccionar todos los elementos con ID "animado"
+            const elementos = document.querySelectorAll("#fade-in-right");
         
             const observer = new IntersectionObserver((entradas) => {
                 entradas.forEach((entrada) => {

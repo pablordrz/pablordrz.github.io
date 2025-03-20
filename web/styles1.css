@@ -183,7 +183,60 @@
         transform: scale(1); /* Crece hasta el tamaño normal */
     }
 }
+.papelera {
+    width: 28px;
+    height: 28px;
+    background-color: #e74c3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    opacity: 0; /* Oculta la papelera por defecto */
+    visibility: hidden; /* Evita que ocupe espacio cuando está oculta */
+}
 
+#proyect:hover  {
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+}
+.list-group-item:hover .papelera {
+    opacity: 1; /* Hace visible la papelera al pasar el ratón */
+    visibility: visible;
+
+
+}
+.papelera:hover {
+    background-color: darkred; /* Cambio de color al pasar el mouse */
+}
+#añadir{
+    width: 28px;
+    height: 28px;
+    background-color: #18bc9c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+}
+#añadir_1{
+    width: 28px;
+    height: 28px;
+    background-color: #18bc9c;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+}
 /*JORGE*/
 
 .color_fondo_pie {
@@ -195,8 +248,8 @@
     margin-top: 10px;
     border-radius: 5px;
 
-    word-break: break-word; /* Permite que las palabras se dividan en cualquier punto */
-   /* overflow-wrap: break-word;  Asegura que las palabras no sobresalgan */
+    word-break: break-all; /* Permite que las palabras se dividan en cualquier punto */
+    overflow-wrap: break-word; /* Asegura que las palabras no sobresalgan */
     white-space: normal; /* Permite que el texto se ajuste en varias líneas */
     hyphens: auto; /* Agrega guiones cuando sea posible para mejorar la legibilidad */
 }
@@ -206,8 +259,8 @@
     margin-top: 10px;
     border-radius: 5px;
 
-    word-break: break-word; /* Permite que las palabras se dividan en cualquier punto */
-    /* overflow-wrap: break-word;  Asegura que las palabras no sobresalgan */
+    word-break: break-all; /* Permite que las palabras se dividan en cualquier punto */
+    overflow-wrap: break-word; /* Asegura que las palabras no sobresalgan */
     white-space: normal; /* Permite que el texto se ajuste en varias líneas */
     hyphens: auto; /* Agrega guiones cuando sea posible para mejorar la legibilidad */
 }

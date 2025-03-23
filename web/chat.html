@@ -70,16 +70,26 @@
             </div>
         </div>
         </nav>
-        <div class="container-fluid fondo px-4">
+        <div class="container-fluid fondo px-4 ">
             <!-- INICIO -->
-            <div class="row p-0 ms-3"> <!-- Fila 1 del Contenedor -->
-                <div class="col p-0">
-                    <ol class="breadcrumb"> <!-- Fila con el apartado Inicio/Chat -->
+            <div class="row d-lg-block d-none ms-4">
+                <div class="breadcrumb-container">
+                    <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
                         <li class="breadcrumb-item active">Chat</li>
-                      </ol>
+                    </ol>
                 </div>
             </div>
+
+            <div class="row rounded-3 p-0 d-lg-none d-block mx-mb-2 mb-3 justify-content-center mx-auto" style="max-width: 800px;">
+                <div class="breadcrumb-container">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                        <li class="breadcrumb-item active">Chat</li>
+                    </ol>
+                </div>
+            </div>
+        
             <!-- ALERTA -->
             <div class="row m-0"> <!-- Fila 2 del Contenedor -->
                 <div class="container-xl m-0" id="alert-container"></div>
@@ -87,7 +97,7 @@
             <!-- LISTA DE PROYECTOS Y CHAT-->
             <!-- Fila 3 del Contenedor -->
                 <!-- PROYECTOS  -->
-                <div class="row bg-white rounded-3 p-0 d-lg-none d-block mx-2 mb-1 d-flex justify-content-end">
+                <div class="row bg-white rounded-3 p-0 d-lg-none d-block mx-2 mb-1 d-flex justify-content-end mx-auto" style="max-width: 800px;">
                     <div class="col-lg-3 m-2 text-end pe-0">
                         <button class="btn  p-0 mb-2">
                             <i id="añadir_1" class="bi bi-plus"></i> <!-- Icono de añadir -->
@@ -97,36 +107,57 @@
                 </div>
                 <!-- DESPLEGABLE  -->
 
-                <div class="row bg-white rounded-3 p-0 d-lg-none d-block mx-2 mb-3">
-                    <div class="accordion p-0" id="accordionExample">
-                        <div class="accordion-item">
+
+
+                <div class="row bg-white rounded-3 p-0 d-lg-none d-block mx-mb-2 mb-3 justify-content-center mx-auto" style="max-width: 800px;">
+                    <div class="accordion p-0" id="accordionExample" >
+                        <div class="accordion-item border rounded">
                             <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed  p-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                <small>Proyecto 1</small>
-                            </button>
+                                <button class="p-2 bg-white border rounded w-100 text-start d-flex align-items-center"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                        aria-expanded="false" aria-controls="collapseOne" style="font-size: 0.875rem;">
+                                    <p class="flex-grow-1 p-0 m-0">Proyecto 1</p>
+                                    <span class="ms-2"><i class="bi bi-chevron-down"></i></span> 
+                                </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse  " aria-labelledby="headingOne" data-bs-parent="#accordionExample" st>
-                            <!--Cuerpo del desplegable-->
-                            <div class="accordion-body ">
-                                <div class="container-fluid  ps-0">
-                                    <div class="row mb-2">
-                                        <a href="#" class="list-group-item list-group-item-action">Proyecto 1</a>
-                                    </div>
-                                    <div class="row mb-2">
-                                        <a href="#" class="list-group-item list-group-item-action">Proyecto 2</a>
-                                    </div>
-                                    <div class="row">
-                                        <a href="#" class="list-group-item list-group-item-action">Proyecto 3</a>
+                            <div id="collapseOne" class="accordion-collapse collapse"
+                                 aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <!-- Cuerpo del desplegable -->
+                                <div class="accordion-body p-0">
+                                    <div class="container-fluid">
+                                        <div class="row p-1">
+                                            <div class="col-12 p-0">
+                                                <a href="#" id="desplegable" class="card card-hover border-0 text-decoration-none">
+                                                    <div class="card-body p-2">
+                                                        <small>Proyecto 1</small>
+                                                    </div>
+                                                </a>
+                                                <a href="#"  class="card card-hover border-0 text-decoration-none">
+                                                    <div class="card-body p-2">
+                                                        <small>Proyecto 2</small>
+                                                    </div>
+                                                </a>
+                                                <a href="#" class="card card-hover border-0 text-decoration-none">
+                                                    <div class="card-body p-2">
+                                                        <small>Proyecto 3</small>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+
+                
+                
+                
             <div class="row pb-3 align-items-start">
                 <!-- Proyectos  -->
-                <div class="col-lg-3 mx-3 bg-white rounded-3 p-2 d-lg-block d-none">
+                <div class="col-lg-3 mx-4 bg-white rounded-3 p-2 d-lg-block d-none">
                     <!-- Botón de Añadir -->
                     <div class="row justify-content-end">
                         <div class="col-lg-3 mx-2 text-end pe-1">
@@ -163,23 +194,34 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="col card p-0 mx-4" style="min-height: 600px;">
+                <!--Chat-->
+                <div class="col card p-0 me-lg-5 me-auto mx-auto p-1" style="min-height: 600px; max-width: 800px;">
+
                     <div class="card-body p-4">
-                        <div id= "mensaje_bot" class="row mb-2 ">
+                        <div id= "mensaje_bot" class="row mb-3 ">
                             <div class="col-1 p-0">
                                 <i class="bi bi-robot"></i>
                             </div>
                             <div class="col-11 rounded-3 bg-secondary p-2 d-flex align-items-center m-0 text-white">
-                                <p class="m-2">Hola </p>
+                                <p class="m-2">Hola! Soy un bot, ¿en qué puedo ayudarte? </p>
                             </div>
                         </div>
-                        <div id= "mensaje_usuario" class="row my-2">
+                        <div id= "mensaje_usuario" class="row my-3">
                             <div class="col-11 rounded-3 bg-primary p-2 d-flex align-items-center m-0 text-white">
-                                <p class="m-2">Hola </p>
+                                <p class="m-2">Estoy realizando una aplicación web para recoger las vulenabilidades de
+                                    mis proyectos. </p>
                             </div>
                             <div class="col-1 d-flex justify-content-end p-0">
                                 <i class="bi bi-person-fill"></i>
+                            </div>
+                        </div>
+                        <div id= "mensaje_bot" class="row mb-3 ">
+                            <div class="col-1 p-0">
+                                <i class="bi bi-robot"></i>
+                            </div>
+                            <div class="col-11 rounded-3 bg-secondary p-2 d-flex align-items-center m-0 text-white">
+                                <p class="m-2">Antes de continuar, permíteme que te cuente que los cangrejos tienen el
+                                    cerebro en la garganta. </p>
                             </div>
                         </div>
                     </div>
